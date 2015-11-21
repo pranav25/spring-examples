@@ -7,13 +7,51 @@
   <version>1.0-SNAPSHOT</version>
   <name>springtutorial Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+
+        <!-- Generic properties -->
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Spring -->
+        <spring.version>4.1.5.RELEASE</spring.version>
+
+        <!-- Hibernate / JPA -->
+        <hibernate.version>4.2.1.Final</hibernate.version>
+
+        <!-- Logging -->
+        <logback.version>1.0.13</logback.version>
+        <slf4j.version>1.7.5</slf4j.version>
+
+        <!-- Test -->
+        <junit.version>4.12</junit.version>
+
+    </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
   </dependencies>
   <build>
     <finalName>springtutorial</finalName>

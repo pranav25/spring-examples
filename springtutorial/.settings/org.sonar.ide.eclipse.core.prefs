@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+extraProperties=sonar.jdbc.username\=sonar\r\nsonar.jdbc.password\=sonar\r\nsonar.jdbc.url\=jdbc\:oracle\:thin\:@localhost\:1521/XE
+projectKey=com.spring.concepts\:springtutorial
+serverUrl=http\://localhost\:9000
+version=2
